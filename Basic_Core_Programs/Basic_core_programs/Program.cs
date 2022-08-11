@@ -9,6 +9,7 @@
             Console.WriteLine("Enter 2 for Leap Year");
             Console.WriteLine("Enter 3 for Power of Two");
             Console.WriteLine("Enter 4 for Harmonic Series");
+            Console.WriteLine("Enter 5 for Prime Factors");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch (ans)
             {
@@ -27,6 +28,10 @@
                 case 4:
                     HarmonicNumber Hn =new HarmonicNumber();
                     Hn.Harmonic();
+                    break;
+                case 5:
+                    Factors primeFactors=new Factors();
+                    primeFactors.PrimeFactors();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
