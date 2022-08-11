@@ -10,6 +10,7 @@
             Console.WriteLine("Enter 3 for Power of Two");
             Console.WriteLine("Enter 4 for Harmonic Series");
             Console.WriteLine("Enter 5 for Prime Factors");
+            Console.WriteLine("Enter 6 for Swapping");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch (ans)
             {
@@ -32,6 +33,10 @@
                 case 5:
                     Factors primeFactors=new Factors();
                     primeFactors.PrimeFactors();
+                    break;
+                case 6:
+                    Swapping Swap =new Swapping();
+                    Swap.SwapingTwoNumbers();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
