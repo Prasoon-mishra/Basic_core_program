@@ -11,6 +11,7 @@
             Console.WriteLine("Enter 4 for Harmonic Series");
             Console.WriteLine("Enter 5 for Prime Factors");
             Console.WriteLine("Enter 6 for Swapping");
+            Console.WriteLine("Enter 7 for Even or Odd");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch (ans)
             {
@@ -37,6 +38,10 @@
                 case 6:
                     Swapping Swap =new Swapping();
                     Swap.SwapingTwoNumbers();
+                    break;
+                case 7:
+                    EvenOdd Eo=new EvenOdd();
+                    Eo.EvenOrOdd();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
