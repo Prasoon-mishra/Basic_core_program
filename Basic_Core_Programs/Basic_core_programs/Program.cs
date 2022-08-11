@@ -12,6 +12,7 @@
             Console.WriteLine("Enter 5 for Prime Factors");
             Console.WriteLine("Enter 6 for Swapping");
             Console.WriteLine("Enter 7 for Even or Odd");
+            Console.WriteLine("Enter 8 for Vowels and Consonants");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch (ans)
             {
@@ -42,6 +43,10 @@
                 case 7:
                     EvenOdd Eo=new EvenOdd();
                     Eo.EvenOrOdd();
+                    break;
+                case 8:
+                    Vowels Vc=new Vowels();
+                    Vc.vowelsOrConsonants();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
