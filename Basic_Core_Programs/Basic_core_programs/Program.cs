@@ -8,6 +8,7 @@
             Console.WriteLine("Enter 1 for Heads and Tails");
             Console.WriteLine("Enter 2 for Leap Year");
             Console.WriteLine("Enter 3 for Power of Two");
+            Console.WriteLine("Enter 4 for Harmonic Series");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch (ans)
             {
@@ -22,6 +23,10 @@
                 case 3:
                     PowerOFTwo Pf =new PowerOFTwo();
                     Pf.powOfTwo();
+                    break;
+                case 4:
+                    HarmonicNumber Hn =new HarmonicNumber();
+                    Hn.Harmonic();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
