@@ -13,6 +13,7 @@
             Console.WriteLine("Enter 6 for Swapping");
             Console.WriteLine("Enter 7 for Even or Odd");
             Console.WriteLine("Enter 8 for Vowels and Consonants");
+            Console.WriteLine("Enter 9 for largest among three");
             int ans = Convert.ToInt32(Console.ReadLine());
             switch (ans)
             {
@@ -47,6 +48,10 @@
                 case 8:
                     Vowels Vc=new Vowels();
                     Vc.vowelsOrConsonants();
+                    break;
+                case 9:
+                    LargestAmongThree Largest = new LargestAmongThree();
+                    Largest.Largest();
                     break;
                 default:
                     Console.WriteLine("Entered value is incorrect");
